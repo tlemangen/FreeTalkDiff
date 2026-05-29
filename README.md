@@ -8,9 +8,13 @@
 
 ![GitHub License](https://img.shields.io/github/license/tlemangen/FreeTalkDiff) &nbsp; <a href="https://arxiv.org/abs/2605.30230"><img src="https://img.shields.io/badge/arXiv-PDF-red"></a> &nbsp; ![CVPR PDF](https://img.shields.io/badge/CVPR-PDF-blue) &nbsp; <a href="https://cvpr.thecvf.com/virtual/2026/poster/39232"><img src="https://img.shields.io/badge/CVPR-Poster-blue"></a> &nbsp; <a href="https://github.com/tlemangen/FreeTalkDiff"><img src="https://img.shields.io/badge/Github-100000.svg?logo=github&logoColor=white"></a>
 
-<video src="https://github.com/tlemangen/FreeTalkDiff/blob/main/resources/cover.mp4" width="256" height="256" controls></video>
+<p align="center" width="100%">
+<video src="
+https://github.com/user-attachments/assets/a8fdd3aa-e4d4-4e63-add0-9f2118795765
+" width="256" height="256" controls></video>
+</p>
 
-**Abstrat**: With the rapid advancement of diffusion models, talking face generation has made remarkable progress. However, existing diffusion-based methods still require task-specific fine-tuning and large-scale audiovisual datasets, resulting in high computational costs that hinder scalability and accessibility of diffusion-based approaches across the research community. To address this, we propose a finetuning-free paradigm that directly performs talking face generation using the pretrained weights of Stable Diffusion and IP-Adapter. This backbone leverages the visual embedding capability of IP-Adapter to mine lip-related semantics from the pretrained Stable Diffusion. To address the challenges of identity drift, synchronization errors, and temporal instability, we also design three trainable-parameterfree components: (1) the Structurist, which explicitly disentangles and reassembles lip and appearance features to mitigate identity drift and appearance distortion; (2) the Structure Controller, which adaptively refines embeddings based on quasi-monotonic motion trends for precise lip synchronization; and (3) the Noise Sensor, which introduces Gaussian prior to detect and suppress flicker and jitter artifacts and enhance temporal consistency. Experimental results show that our method outperforms existing SOTA approaches in both lip-sync accuracy (at least 0.16 gain in PCLD) and visual fidelity (at least 0.7 improvement in FID), establishing a novel fine-tuning-free diffusion framework for talking face generation.
+**Abstract**: With the rapid advancement of diffusion models, talking face generation has made remarkable progress. However, existing diffusion-based methods still require task-specific fine-tuning and large-scale audiovisual datasets, resulting in high computational costs that hinder the scalability and accessibility of diffusion-based approaches across the research community. To address this, we propose a fine-tuning-free paradigm that directly performs talking face generation using the pretrained weights of Stable Diffusion and IP-Adapter. This backbone leverages the visual embedding capability of IP-Adapter to mine lip-related semantics from the pretrained Stable Diffusion. To address the challenges of identity drift, synchronization errors, and temporal instability, we also design three trainable-parameterfree components: (1) the Structurist, which explicitly disentangles and reassembles lip and appearance features to mitigate identity drift and appearance distortion; (2) the Structure Controller, which adaptively refines embeddings based on quasi-monotonic motion trends for precise lip synchronization; and (3) the Noise Sensor, which introduces Gaussian prior to detect and suppress flicker and jitter artifacts and enhance temporal consistency. Experimental results show that our method outperforms existing SOTA approaches in both lip-sync accuracy (at least 0.16 gain in PCLD) and visual fidelity (at least 0.7 improvement in FID), establishing a novel fine-tuning-free diffusion framework for talking face generation.
 
 ---
 
@@ -33,7 +37,7 @@ freetalkdiff/
 |   |   `-- selfie_multiclass_256x256.tflite   
 |   |-- face_alignment.py                           # InsightFace alignment and recovery utilities
 |   |-- face_enhancer.py                            # GFPGAN/RealESRGAN restoration
-|   |-- masker.py                                   # MediaPipe segmentation based mouth/face masks
+|   |-- masker.py                                   # MediaPipe segmentation-based mouth/face masks
 |   |-- mediapipe_segmenter.py                      # Selfie segmentation wrapper
 |   |-- noise_sensor.py                             # The proposed module
 |   |-- structure_controller.py                     # The proposed module
