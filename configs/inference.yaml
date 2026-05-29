@@ -1,0 +1,35 @@
+masker:
+  checkpoint_path: modules/mediapipe/selfie_multiclass_256x256.tflite
+
+structurist:
+  canonical_face_model_path: modules/mediapipe/canonical_face_model.obj
+  texture_size: 256
+  static_image_mode: False
+  refine_landmarks: True
+  min_detection_confidence: 0.5
+  min_tracking_confidence: 0.5
+  preserve_mouth_hole: True
+
+face_enhancer:
+  model_name: gfpgan
+  realesrgan_path: modules/face_enhancer/RealESRGAN_x4plus.pth
+  gfpgan_pat: modules/face_enhancer/GFPGANv1.4.pth
+  outscale: 4
+  use_face_enhance: True
+
+freetalkdiff:
+  setup:
+    det_size: 256
+    scale: 1.0
+    torch_dtype: float16
+    variant: fp16
+    device: cuda
+    seed: 42
+    proxy_port: 7890
+  inference:
+    prompt: null
+    negative_prompt: null
+    guidance_scale: 7.5
+    num_inference_steps: 50
+    strength: 1.0
+    clip_len: 5

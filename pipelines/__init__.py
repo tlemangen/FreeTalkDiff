@@ -1,0 +1,2 @@
+from .sd15_inpaint_ipadapter_faceid_pipeline import SD15InpaintIPAdapterFaceIDPipeline
+from .freetalkdiff import FreeTalkDiff

@@ -1,0 +1,7 @@
+/.vscode
+*.pth
+/modules/__pycache__
+*.obj
+*.tflite
+/pipelines/__pycache__
+/tests

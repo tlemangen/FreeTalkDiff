@@ -1,0 +1,35 @@
+# FreeTalkDiff minimal runtime requirements.
+# Tests are intentionally excluded.
+#
+# Install torch/torchvision with the wheel that matches your CUDA runtime.
+# Example: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
+
+# Diffusion and model loading
+diffusers
+transformers
+accelerate
+safetensors
+
+# Face analysis and ONNX runtime
+# Choose an onnxruntime-gpu build compatible with your CUDA/cuDNN versions.
+insightface
+onnxruntime-gpu
+
+# Vision and media processing
+mediapipe
+opencv-python
+numpy
+Pillow
+
+# Configuration and utilities
+omegaconf
+tqdm
+einops
+
+# Face libs
+gfpgan
+realesrgan
+basicsr
+facexlib
