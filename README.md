@@ -6,7 +6,7 @@
 
 [Hao Wu](https://github.com/tlemangen), Xiangyang Luo, Hao Wang, Jiawei Zhang, Yi Zhang, and Jinwei Wang
 
-![GitHub License](https://img.shields.io/github/license/tlemangen/FreeTalkDiff) &nbsp; <a href="https://arxiv.org/abs/2605.30230"><img src="https://img.shields.io/badge/arXiv-PDF-red"></a> &nbsp; ![CVPR PDF](https://img.shields.io/badge/CVPR-PDF-blue) &nbsp; <a href="https://cvpr.thecvf.com/virtual/2026/poster/39232"><img src="https://img.shields.io/badge/CVPR-Poster-blue"></a> &nbsp; <a href="https://github.com/tlemangen/FreeTalkDiff"><img src="https://img.shields.io/badge/Github-100000.svg?logo=github&logoColor=white"></a>
+![Static Badge](https://img.shields.io/badge/license-Apache%202.0-green) &nbsp; <a href="https://arxiv.org/abs/2605.30230"><img src="https://img.shields.io/badge/arXiv-PDF-red"></a> &nbsp; ![CVPR PDF](https://img.shields.io/badge/CVPR-PDF-blue) &nbsp; <a href="https://cvpr.thecvf.com/virtual/2026/poster/39232"><img src="https://img.shields.io/badge/CVPR-Poster-blue"></a> &nbsp; <a href="https://github.com/tlemangen/FreeTalkDiff"><img src="https://img.shields.io/badge/Github-100000.svg?logo=github&logoColor=white"></a>
 
 ![cover](resources/cover.gif)
 
